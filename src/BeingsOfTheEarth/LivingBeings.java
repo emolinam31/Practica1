@@ -1,6 +1,5 @@
 package BeingsOfTheEarth;
 import java.util.*;
-import SkyBeings.SkyBeing;
 
 abstract public class LivingBeings implements EarthBeing, Creator{
     Scanner tc = new Scanner(System.in);

@@ -1,7 +1,5 @@
 // Clase Main ( Compilacion del codigo )
 
-
-
 package Test;
 import java.util.*;
 import BeingsOfTheEarth.*;
@@ -13,10 +11,9 @@ public class Main {
         boolean estado = true;
 
         Scanner tc = new Scanner(System.in);
-        Human humano = new Human(0, "");
-        Angel angel = new Angel(0, "");
-        LivingBeingsCreator SerNuevo = new LivingBeingsCreator();
-
+        Human humano = new Human(0, ""); //Creacion de objeto tipo humano para acceder a los metodos de el y sus clases padres
+        Angel angel = new Angel(0, ""); ////Creacion de objeto tipo Angel para acceder a los metodos de el y sus clases padres
+        LivingBeingsCreator SerNuevo = new LivingBeingsCreator(); ////Creacion de objeto a eleccion  para acceder a los metodos de el y sus clases padres
 
         do{
             System.out.println("Bienvenido");
@@ -32,6 +29,9 @@ public class Main {
                 humano.born();
                 humano.grow();
                 humano.die();
+                humano.fly();
+                humano.changeDimension();
+                humano.respawn();
 
             }
             else if(eleccion == 2){

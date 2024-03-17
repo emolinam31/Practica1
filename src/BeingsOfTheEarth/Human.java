@@ -2,7 +2,7 @@ package BeingsOfTheEarth;
 
 import SkyBeings.SkyBeing;
 
-public class Human extends LivingBeings implements EarthBeing{
+public class Human extends LivingBeings implements EarthBeing, SkyBeing{
 
     private int edad;
     private String nombre;
@@ -55,5 +55,25 @@ public class Human extends LivingBeings implements EarthBeing{
     @Override
     public String createLivingBeings() {
         return null;
+    }
+
+
+
+    //Metodos de SkyBeing a los cuales solo puede acceder Human
+    @Override
+    public void fly() {
+
+    }
+
+    @Override
+    public void changeDimension() {
+        System.out.println("Como soy " + getNombre() +  " y soy Humano no puedo cambiar de dimension ");
+
+    }
+
+    @Override
+    public void respawn() {
+        System.out.println("Como soy " + getNombre() +  " y soy Humano no puedo volver a nacer ");
+
     }
 }
