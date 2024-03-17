@@ -62,12 +62,5 @@ public class Main {
             }
         }
         while (estado);
-
-
-
-
-
-
-
     }
 }
